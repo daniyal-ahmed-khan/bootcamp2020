@@ -29,27 +29,6 @@
                 text-decoration: none;
                 padding: 18px 30px;
             }
-
-            header{
-                background-color:#5920df;
-                display: flex;
-                flex-flow: column;
-                height: 500px;
-                justify-content: center;
-                align-items: center;
-            }
-
-            header h1 {
-                font-size: 70px;
-                /* text-align: center; */
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                color: white;
-            }
-            header p {
-                font-size: 30px;
-                color: white;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
             a:hover, a.active {
                 background-color:white;
                 color: black;
@@ -68,7 +47,62 @@
                 display: none;
             }
 
+            header{
+                background-color:#5920df;
+                height: 500px;
+            }
 
+            div#headerElements {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 100px;
+            }
+
+            #headerElements h1 { /* START PAGE*/
+                font-size: 70px;
+                /* text-align: center; */
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: white;
+            }
+
+            #headerElements p {
+                font-size: 30px;
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            
+            #headerElements button {
+                background-color: black;
+                cursor: pointer;
+                color: white;
+                width: 170px;
+                height: 50px;
+                border: 1px solid black;
+                font-size: 20px;
+                margin-top: 60px;
+            }
+
+            #headerElements button:hover {
+                color: black;
+                background-color: white;
+                border: 1px solid white;
+            }
+            .anchor {
+                font-size: 100px;
+                color: #5920df;
+                /* line-height: 56px; */
+                /* margin-right: 40px;
+                margin-top: 12px; */
+            }
+            div#portion1 {
+                display: flex;
+                flex-flow: row;
+            }
+            div#part1 {
+
+            }
             @media (max-width: 799px){
                 .menu {
                     display: block;
@@ -100,24 +134,19 @@
                     left: 0;
                 }
             }
+
+            p#p1 {
+                font-size: 18px;
+                margin: 10px 0px;
+            }
+            p#p2 {
+                font-family
+                font-size: 15px;
+                margin: 15px 0px;
+            }
         </style>
     </head>
     <body>
-        <div>
-            <!-- <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class='menu'>
-                    <i class='fas fa-bars'></i>
-                </label>
-                <ul>
-                    <li><a class='active' href="#">Home</a></li>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                </ul>    
-            </nav> -->
-        </div>
         <header>
             
             <nav>
@@ -133,8 +162,24 @@
                     <li><a href="#">Link 4</a></li>
                 </ul>    
             </nav>
-            <h1>START PAGE</h1>
-            <p>Template by w3.css</p>
+            <div id="headerElements">
+                <h1>START PAGE</h1>
+                <p>Template by w3.css</p>
+                <button>Get Started</button>
+            </div>
         </header>
+
+        <div id="portion1">
+            <div id="part1">
+                <h1>Lorem Ipsum</h1>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+            <div id="part2">
+                <label><i class='fa fa-anchor'></i></label>
+            </div>
+        </div>
+
     </body>
 </html>
