@@ -1,6 +1,7 @@
 <html>
     <head>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <style>
             *{
                 box-sizing: border-box;
@@ -15,6 +16,7 @@
 
             nav{
                 margin: 0;
+                position: fixed;
                 background: #5920df; 
                 height: 54px;
                 width: 100%;
@@ -49,7 +51,7 @@
 
             header{
                 background-color:#5920df;
-                height: 500px;
+                height: 570px;
             }
 
             div#headerElements {
@@ -62,14 +64,15 @@
 
             #headerElements h1 { /* START PAGE*/
                 font-size: 70px;
-                /* text-align: center; */
                 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                 color: white;
+                margin-top:50px;
             }
 
             #headerElements p {
                 font-size: 30px;
                 color: white;
+                margin-top:50px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
             
@@ -78,7 +81,7 @@
                 cursor: pointer;
                 color: white;
                 width: 170px;
-                height: 50px;
+                height: 55px;
                 border: 1px solid black;
                 font-size: 20px;
                 margin-top: 60px;
@@ -90,19 +93,11 @@
                 border: 1px solid white;
             }
             .anchor {
-                font-size: 100px;
+                font-size: 210px;
                 color: #5920df;
-                /* line-height: 56px; */
-                /* margin-right: 40px;
-                margin-top: 12px; */
             }
-            div#portion1 {
-                display: flex;
-                flex-flow: row;
-            }
-            div#part1 {
-
-            }
+            
+            
             @media (max-width: 799px){
                 .menu {
                     display: block;
@@ -134,15 +129,128 @@
                     left: 0;
                 }
             }
-
-            p#p1 {
-                font-size: 18px;
-                margin: 10px 0px;
+            div#portion1 {
+                display: flex;
+                flex-flow: row;
+                margin: 0px 0px;
             }
-            p#p2 {
-                font-family
-                font-size: 15px;
+
+            div#part1 {
+                display:flex;
+                flex-flow: column;
+                flex: 2;
+                padding: 75px 100px 75px 140px ;
+            }
+
+            div#part2 {
+                padding: 140px 130px 140px 0px ;
+            }
+
+            div#part1 p#p1 {
+                font-size: 19px;
+                padding-top: 40px;  
+                margin: 10px 0px;
+                line-height: 25px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            div#part1 p#p2 {
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 17.5px;
+                padding-top: 40px;  
+                line-height: 20px;
+                color: rgb(117, 116, 116);
                 margin: 15px 0px;
+            }
+
+            div#part1 h1{
+                font-size: 36px;
+                margin: 10px 0px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            /* Another Section's  */
+            div#portion2 {
+                display: flex;
+                flex-flow: row;
+                margin: 0px 0px;
+            }
+
+            div#section1 {
+                display:flex;
+                flex-flow: column;
+                flex: 2;
+                padding: 75px 140px 75px 100px ;
+            }
+
+            div#section2 {
+                padding: 140px 0px 140px 130px ;
+            }
+
+            div#section1 p#p1 {
+                font-size: 19px;
+                padding-top: 40px;  
+                margin: 10px 0px;
+                line-height: 25px;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+
+            div#section1 p#p2 {
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 17.5px;
+                padding-top: 40px;  
+                line-height: 20px;
+                color: rgb(117, 116, 116);
+                margin: 15px 0px;
+            }
+
+            div#section1 h1{
+                font-size: 36px;
+                margin: 10px 0px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .quote {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color:dimgray;
+                height: 190px;
+            }
+
+            .quote h2 {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: white;
+                font-size: 30px;
+            }
+
+            footer {
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+            }
+            .footerDiv {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .socials {
+                color: dimgray;
+                font-size: 40px;
+                cursor: pointer;
+            }
+            footer p {
+                padding-top: 70px;
+                font-size: 21px;
+                color: dimgray;
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            footer p a {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 21px;
+                color: dimgray;
             }
         </style>
     </head>
@@ -169,7 +277,7 @@
             </div>
         </header>
 
-        <div id="portion1">
+        <div id="portion1" >
             <div id="part1">
                 <h1>Lorem Ipsum</h1>
                 <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -177,9 +285,53 @@
             </div>
             
             <div id="part2">
-                <label><i class='fa fa-anchor'></i></label>
+                <label class="anchor">
+                    <i class='fa fa-anchor'></i>
+                </label>
             </div>
         </div>
 
+        <div id="portion2" style="background-color:rgb(236, 236, 243)">
+            <div id="section2">
+                <label class="anchor">
+                    <i class='fa fa-coffee'></i>
+                </label>
+            </div>
+            <div id="section1">
+                <h1>Lorem Ipsum</h1>
+                <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="quote">
+            <h2>Quote of the day: live life</h2>
+        </div>
+
+        <footer>
+            <div class="footerDiv">
+                <label class="socials">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </label>
+                <label class="socials">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </label>
+                <label class="socials">
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                </label>
+                <label class="socials">
+                    <ion-icon name="logo-snapchat"></ion-icon>
+                </label>
+                <label class="socials">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </label>
+                <label class="socials">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </label>
+            </div>
+            <p>Powered by
+                <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </p>
+        </footer>
     </body>
 </html>
