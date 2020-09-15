@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+         
+            a {
+                padding: 12px 130px;
+                text-decoration: none;
+                color: white;
+                font-family: Inconsolata, sans-serif;
+                font-size: 17px;
+                
+            }
+            header {
+                display: flex;
+               
+            }
+            .nav-bar{
+                position: fixed;
+                background-color: black;
+                flex-flow: row;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 58px;
+                width: 100%;
+            }
+            a:hover {
+                background-color: silver;
+                color: black;
+            }
+            .bgimg{
+                background-position: center;
+                background-size: cover;
+                background-image: url(coffeehouse.jpg);
+                min-height: 75%;
+                width: 100%;
+            } 
+            .item-div:hover {
+                background-color: silver;
+                color: black;
+            }
+             
+            .grayscale {
+                filter: grayscale(50%);
+            }
+            
+            header div#header-content label#label1 {
+                color: white;
+                background-color: black;
+                font-family: Inconsolata, sans-serif;
+            }
+
+            header div#header-content label#label2 {
+                color: white;
+                font-family: Inconsolata, sans-serif;
+            }
+            header div#header-content label#label3 {
+                color: white;
+                font-family: Inconsolata, sans-serif;
+            }
+
+            #header-content {
+                display: flex;
+                flex-flow: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
+            .content1 {
+                padding-top: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header class="bgimg grayscale">
+                
+                <div class="nav-bar">
+                    <!-- <div class="item-div" > -->
+                        <a href="#">HOME</a>
+                    <!-- </div>
+                    <div class="item-div"> -->
+                        <a href="#">ABOUT</a>
+                    <!-- </div>
+                    <div class="item-div"> -->
+                        <a href="#">MENU</a>
+                    <!-- </div>
+                    <div class="item-div"> -->
+                        <a href="#">WHERE</a>
+                    <!-- </div>  -->
+                </div>
+                
+               <div id="header-content">
+                    <div class="content1">
+                        <label id="label1">Open from 6am to 5pm</label>
+                    </div>
+                    <div class="content2">
+                         <label id="label2">the </br>Cafe</label>
+                    </div>
+                    <div class="content3">
+                         <label id="label3">15 Adr street, 5015</label>
+                    </div>
+                </div>
+            </header>
+        </div>
+           
+    </body>
+</html>
