@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            #box {
+                display: flex;
+                flex-flow: column;
+            }
+            #upper-box{
+                flex:1;
+                display: flex;
+                flex-flow: row;
+            }
+            #lower-box {
+                flex:1;
+                display: flex;
+                flex-flow: row;
+            }
+            #mid-box {
+                flex:1;
+                display: flex;
+                flex-flow: row;
+            }
+            #upper-right-box {
+                background-color:#607D8B;
+                flex:1;
+                
+            }
+            #upper-left-box {
+                background-color: black;
+                flex:1;
+            }
+            #mid-right-box {
+                background-color: #3f51f5;
+                flex:1;
+            }
+            #mid-left-box {
+                background-color: #f1f1f1;
+                flex:1;
+            }
+            #lower-right-box {
+                background-color: #009688;
+                flex:1;
+            }
+            #lower-left-box {
+                background-color: #616161;
+                flex:1;
+            }
+
+
+
+
+
+            #my-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 64px 0px;
+                
+            }
+            #my-logo h1 {
+                font-size: 36px;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                margin: 10px 0px;
+            }
+
+            #navigation {
+                padding: 64px 0px;
+                
+            }   
+            div#navigation div#a-div a {
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                display: block;
+                padding: 18px;
+                font-size: 15px;
+                font-family: Verdana, sans-serif;
+            } 
+
+            #all-upper-left-box-content {
+                padding: 0.15px 16px;
+                height: 700px;
+            }
+            #a1:hover {
+                background-color: #607D8B; ;
+            }
+
+            #a2:hover {
+                background-color: rgb(20, 160, 153) ;
+            }
+            #a3:hover {
+                background-color: #616161;
+            }
+            #a4:hover {
+                background-color: #5a3017;
+            }
+
+
+
+            #all-upper-right-box-content {
+                padding: 0.15px 16px;
+                height: 700px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #all-upper-right-box-content h1 {
+                font-size: 36px;
+                font-family: 'Raleway', sans-serif;
+                color: white;
+                margin: 10px 0px;
+            }
+
+            #about-paras {
+                padding: 12px 24px;
+            }
+            #about-paras p {
+                color: white;
+                font-size: 15px;
+                font-family: Verdana, sans-serif;
+                margin: 15px 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <!---------------------------------- Upper Box ------------------------------------->
+            <div id="upper-box">
+                <div id="upper-left-box">
+                    <div id="all-upper-left-box-content">
+                        <div id="my-logo">
+                            <h1>My Logo</h1>
+                        </div>
+                        <div id="navigation">
+                            <div id="a-div">
+                                <a id="a1" href="#">Home</a>
+                                <a id="a2" href="#">My Work</a>
+                                <a id="a3" href="#">Resume</a>
+                                <a id="a4" href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+
+
+
+                <div id="upper-right-box">
+                    <div id="all-upper-right-box-content">
+                        <h1>About Me</h1>
+                        <img src="avatar3.png" style=" margin: 16px ;width:50%; border-radius: 50%;">
+                        <div id="about-paras">
+                            <p style="line-height: 22px;">Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                            <p style="line-height: 22px;">Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div id="mid-box">
+                <div id="mid-left-box">
+                    <p>purple</p>
+                </div>
+                <div id="mid-right-box">
+                    <p>orange</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div id="lower-box">
+                <div id="lower-left-box">
+                    <p>yellow</p>
+                </div>
+                <div id="lower-right-box">
+                    <p>green</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
