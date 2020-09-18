@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <style> 
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            #div1 {
+                box-shadow: 0px 1px 5px #888888;
+                display: inline-block;
+                width: 100%;
+                height:59px;   
+            }
+            a#a1 {
+                letter-spacing: 4px;
+                font-size: 16px;
+                font-family: Verdana, sans-serif;
+                padding: 8px 16px;
+                text-decoration: none;
+                color: black;
+                
+            }
+            a#a1:hover, a#a2:hover {
+                background-color: silver;
+            }
+            a#a2 {
+                letter-spacing: 4px;
+                font-size: 16px;
+                font-family: Verdana, sans-serif;
+                padding: 8px 16px;
+                text-decoration: none;
+                color: black;
+                
+            }
+            #div2 {
+                padding: 8px 16px;
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+            }
+            #div3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+
+    <body style="max-width: 1370px;">
+        <div id="div1">
+            <div id="div2">
+                <!-- first element -->
+                <a id="a1" href="#"> <b>BR</b> Architects</a>
+                 <!-- second element -->
+                <div id="div3">
+                    <a id="a2" href="#">Projects</a>
+                    <a id="a2" href="#">About</a>
+                    <a id="a2" href="#">Contact</a>
+                </div> 
+            </div>
+        </div>
+        <header>
+            <img src="architect.jpg" width="1370" height="800">
+        </header>
+    </body>
+</html>
